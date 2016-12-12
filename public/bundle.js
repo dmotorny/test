@@ -50,7 +50,7 @@
 
 	var App = function() {
 	    console.log(str);
-	    $('body').html('<h1>hello1sdfewrweasdf</h1>');
+	    $('body').html('<div class="b-test"><h3 class="b-test__heading">Heading</h3></div>');
 	};
 
 	var app = new App();
@@ -10332,7 +10332,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: red;\n}\n", ""]);
+	exports.push([module.id, "body {\n  background-color: red;\n}\n.b-test {\n  margin-top: 50px;\n  padding: 50px;\n  background: #fff;\n}\n.b-test__heading {\n  font-size: 200%;\n  color: blue;\n}\n", ""]);
 
 	// exports
 
