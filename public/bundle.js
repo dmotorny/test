@@ -45,12 +45,10 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var $ = __webpack_require__(1);
-	var str = __webpack_require__(2);
-	__webpack_require__(3)
+	__webpack_require__(2);
 
 	var App = function() {
-	    console.log(str);
-	    $('body').html('<div class="b-test"><h3 class="b-test__heading">Heading</h3></div>');
+	    $('body').html('<div class="b-test"><h3 class="b-test__heading">Heading<div> </div></h3></div>');
 	};
 
 	var app = new App();
@@ -10285,29 +10283,22 @@
 
 /***/ },
 /* 2 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = 'App: initsdf';
+	__webpack_require__(3);
 
 
 /***/ },
 /* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(4);
-
-
-/***/ },
-/* 4 */
-/***/ function(module, exports, __webpack_require__) {
-
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(5);
+	var content = __webpack_require__(4);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(7)(content, {});
+	var update = __webpack_require__(6)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -10324,21 +10315,21 @@
 	}
 
 /***/ },
-/* 5 */
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(6)();
+	exports = module.exports = __webpack_require__(5)();
 	// imports
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: red;\n}\n.b-test {\n  margin-top: 50px;\n  padding: 50px;\n  background: #fff;\n}\n.b-test__heading {\n  font-size: 200%;\n  color: green;\n}\n", ""]);
+	exports.push([module.id, "body {\n  background-color: red;\n}\n.b-test {\n  margin-top: 50px;\n  padding: 50px;\n  background: #fff;\n}\n.b-test__heading {\n  font-size: 40px;\n  color: green;\n}\n.b-test__heading > div {\n  width: 25px;\n  height: 25px;\n  background-color: yellowgreen;\n}\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 6 */
+/* 5 */
 /***/ function(module, exports) {
 
 	/*
@@ -10394,7 +10385,7 @@
 
 
 /***/ },
-/* 7 */
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*

@@ -2,13 +2,21 @@ body {
     background-color: red;
 }
 
+@font-size: 40px;
+
 .b-test {
     margin-top: 50px;
     padding: 50px;
     background: #fff;
 
     &__heading {
-        font-size: 200%;
+        font-size: @font-size;
         color: green;
+
+        & > div {
+            width: 25px;
+            height: 25px;
+            background-color: yellowgreen;
+        }
     }
 }
