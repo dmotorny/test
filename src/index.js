@@ -1,6 +1,6 @@
 var $ = require('jquery');
 var str = require('./constant');
-require('./less')
+require('./less');
 
 var App = function() {
     console.log(str);

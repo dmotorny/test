@@ -10332,7 +10332,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: red;\n}\n.b-test {\n  margin-top: 50px;\n  padding: 50px;\n  background: #fff;\n}\n.b-test__heading {\n  font-size: 200%;\n  color: blue;\n}\n", ""]);
+	exports.push([module.id, "body {\n  background-color: red;\n}\n.b-test {\n  margin-top: 50px;\n  padding: 50px;\n  background: #fff;\n}\n.b-test__heading {\n  font-size: 200%;\n  color: green;\n}\n", ""]);
 
 	// exports
 
