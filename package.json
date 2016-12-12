@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack ./src/index.js ./public/bundle.js",
+    "start": "webpack-dev-server --progress --inline --hot",
+    "dev": "SET NODE_ENV=development && npm run start",
+    "prod": "SET NODE_ENV=production && webpack",
     "lint": "eslint ./src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
