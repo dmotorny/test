@@ -50,7 +50,7 @@
 
 	var App = function() {
 	    console.log(str);
-	    $('body').html('<h1>hello</h1>');
+	    $('body').html('<h1>hello1</h1>');
 	}
 
 	var app = new App();
@@ -10285,7 +10285,7 @@
 /* 2 */
 /***/ function(module, exports) {
 
-	module.exports = 'App: init';
+	module.exports = 'App: initsdf';
 
 /***/ }
 /******/ ]);
